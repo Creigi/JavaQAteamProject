@@ -119,5 +119,4 @@ public class PlayerTest {
 
         Assertions.assertEquals(expected, actual);
     }
-
 }
