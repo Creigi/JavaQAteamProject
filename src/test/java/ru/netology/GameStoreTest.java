@@ -87,4 +87,16 @@ public class GameStoreTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void sumPlayedTimeIfNoPlayTime () {
+        store.addPlayTime("Petya", 10);
+        store.addPlayTime("Petya", 5);
+        store.addPlayTime("Vitya", 12);
+
+        int expected = 0;
+        int actual = store1.getSumPlayedTime();
+
+        Assertions.assertEquals(expected, actual);
+    }
 }
